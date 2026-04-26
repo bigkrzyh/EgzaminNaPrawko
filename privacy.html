@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>Polityka Prywatności - EgzaminNaPrawko</title>
+    <meta name="description" content="Polityka prywatności aplikacji EgzaminNaPrawko">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://bigkrzyh.github.io/EgzaminNaPrawko/privacy.html">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .privacy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 120px 24px 60px;
+        }
+        .privacy-content h1 {
+            font-size: 2.5rem;
+            margin-bottom: 8px;
+            background: var(--gradient);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .privacy-content .updated {
+            color: var(--text-secondary);
+            margin-bottom: 40px;
+        }
+        .privacy-content h2 {
+            font-size: 1.5rem;
+            margin: 40px 0 16px;
+            color: var(--text-primary);
+        }
+        .privacy-content h3 {
+            font-size: 1.2rem;
+            margin: 24px 0 12px;
+            color: var(--primary);
+        }
+        .privacy-content p, .privacy-content li {
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            line-height: 1.8;
+        }
+        .privacy-content ul {
+            margin-left: 24px;
+            margin-bottom: 16px;
+        }
+        .privacy-content a {
+            color: var(--primary);
+            text-decoration: none;
+        }
+        .privacy-content a:hover {
+            text-decoration: underline;
+        }
+        .privacy-content table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+        .privacy-content th, .privacy-content td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        .privacy-content th {
+            color: var(--text-primary);
+            font-weight: 600;
+        }
+        .privacy-content td {
+            color: var(--text-secondary);
+        }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--primary);
+            text-decoration: none;
+            margin-bottom: 24px;
+        }
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg-gradient"></div>
+
+    <main class="privacy-content">
+        <a href="./" class="back-link">← Powrót do strony głównej</a>
+
+        <h1>Polityka Prywatności</h1>
+        <p class="updated">Ostatnia aktualizacja: kwiecień 2026</p>
+
+        <h2>Wprowadzenie</h2>
+        <p>EgzaminNaPrawko („my", „nasza" lub „aplikacja") to niezależna aplikacja iOS pomagająca w monitorowaniu wolnych terminów egzaminów na prawo jazdy w serwisie info-car.pl. Twoja prywatność jest dla nas ważna. Niniejsza Polityka Prywatności wyjaśnia, jakie dane przetwarzamy, w jakim celu i gdzie są one przechowywane.</p>
+        <p>Zasada główna: <strong>nie posiadamy żadnych własnych serwerów przechowujących Twoje dane</strong>. Wszystkie informacje, które wprowadzasz w aplikacji, pozostają na Twoim urządzeniu lub są przesyłane bezpośrednio do oficjalnego API info-car.pl.</p>
+
+        <h2>Podsumowanie prywatności (Etykieta prywatności App Store)</h2>
+        <table>
+            <tr>
+                <th>Typ danych</th>
+                <th>Zbierane</th>
+                <th>Cel</th>
+                <th>Powiązane z Tobą</th>
+            </tr>
+            <tr>
+                <td>Dane kontaktowe (e-mail)</td>
+                <td>Nie zbieramy*</td>
+                <td>—</td>
+                <td>Nie</td>
+            </tr>
+            <tr>
+                <td>Identyfikatory (ID urządzenia)</td>
+                <td>Tak**</td>
+                <td>Reklamy</td>
+                <td>Nie</td>
+            </tr>
+            <tr>
+                <td>Dane użytkowania</td>
+                <td>Tak**</td>
+                <td>Reklamy</td>
+                <td>Nie</td>
+            </tr>
+            <tr>
+                <td>Dane wrażliwe (PESEL, PKK)</td>
+                <td>Nie zbieramy*</td>
+                <td>—</td>
+                <td>Nie</td>
+            </tr>
+        </table>
+        <p>* Dane są przechowywane wyłącznie lokalnie na Twoim urządzeniu (iOS Keychain) i nie trafiają na nasze serwery — nie posiadamy własnych serwerów.</p>
+        <p>** Zbierane przez Google AdMob w celach reklamowych.</p>
+
+        <h2>Informacje, które przetwarzamy</h2>
+
+        <h3>1. Dane logowania do info-car.pl</h3>
+        <p>Aby aplikacja mogła sprawdzać Twoje terminy, musisz zalogować się do info-car.pl swoim adresem e-mail i hasłem. Logowanie odbywa się przez wbudowany formularz oficjalnego serwisu info-car.pl (nie nasz). Po zalogowaniu aplikacja otrzymuje token sesji, który przechowuje bezpiecznie w iOS Keychain Twojego urządzenia.</p>
+        <p><strong>Przetwarzanie:</strong> Adres e-mail i hasło są używane wyłącznie do logowania w info-car.pl i przechowywane lokalnie w iOS Keychain. Nigdy nie są wysyłane na nasze serwery. Możesz w każdej chwili wylogować się w ustawieniach aplikacji — wtedy hasło zostaje usunięte z urządzenia.</p>
+
+        <h3>2. Dane kandydata</h3>
+        <p>Opcjonalnie możesz wprowadzić swoje dane (imię, nazwisko, e-mail, PESEL, numer PKK, telefon), aby ułatwić wypełnianie formularzy w info-car.pl. Te dane są przechowywane wyłącznie w bezpiecznym iOS Keychain i są dostępne dopiero po odblokowaniu urządzenia.</p>
+        <p><strong>Przetwarzanie:</strong> Dane te nigdy nie opuszczają Twojego urządzenia — nie posiadamy serwerów, na które miałyby trafić. Domyślnie są one ukryte w ustawieniach aplikacji za przyciskiem „pokaż", aby chronić je przed osobą zaglądającą Ci przez ramię.</p>
+
+        <h3>3. Konfiguracja monitorowania</h3>
+        <p>Aplikacja przechowuje lokalnie Twoje preferencje, w tym:</p>
+        <ul>
+            <li>Wybrane WORD-y (Wojewódzkie Ośrodki Ruchu Drogowego) do monitorowania</li>
+            <li>Kategoria i typ egzaminu (praktyczny / teoretyczny)</li>
+            <li>Filtry dat i preferowanych godzin</li>
+            <li>Ustawienia powiadomień (tryb cichy, dźwięk alarmu, częstotliwość sprawdzania)</li>
+            <li>Lokalna historia rezerwacji i wykryte zmiany w terminach</li>
+        </ul>
+        <p><strong>Przetwarzanie:</strong> Te dane nigdy nie opuszczają Twojego urządzenia.</p>
+
+        <h3>4. Komunikacja z info-car.pl</h3>
+        <p>Aplikacja w Twoim imieniu komunikuje się z oficjalnym API serwisu info-car.pl, aby pobierać listę wolnych terminów. Dane przesyłane są bezpośrednio z Twojego urządzenia do info-car.pl — nie pośredniczymy w tej komunikacji.</p>
+
+        <h2>Reklamy i Przejrzystość Śledzenia Aplikacji</h2>
+        <p>Aplikacja wyświetla reklamy dostarczane przez Google AdMob.</p>
+
+        <h3>Zgoda na śledzenie</h3>
+        <p>Przy pierwszym uruchomieniu aplikacji zobaczysz komunikat Apple z pytaniem o zgodę na śledzenie Twojej aktywności. Jest to wymagane przez Apple dla aplikacji wyświetlających reklamy.</p>
+        <ul>
+            <li><strong>Jeśli odmówisz śledzenia:</strong> Zobaczysz ogólne reklamy. Aplikacja działa tak samo.</li>
+            <li><strong>Jeśli zezwolisz na śledzenie:</strong> Możesz zobaczyć spersonalizowane reklamy dopasowane do Twoich zainteresowań.</li>
+        </ul>
+
+        <h3>Dane zbierane dla reklam</h3>
+        <p>Google AdMob może zbierać:</p>
+        <ul>
+            <li>Przybliżoną lokalizację (na podstawie adresu IP)</li>
+            <li>Dane użytkowania (interakcje z reklamami, wzorce korzystania z aplikacji)</li>
+            <li>Identyfikatory urządzenia (identyfikator reklamowy — tylko jeśli zezwolisz na śledzenie)</li>
+        </ul>
+
+        <h3>Jak zmienić swoją decyzję</h3>
+        <p>Możesz zmienić decyzję dotyczącą śledzenia w dowolnym momencie:</p>
+        <ul>
+            <li>iOS: Ustawienia → Prywatność i ochrona → Śledzenie → znajdź „EgzaminNaPrawko" i włącz/wyłącz</li>
+        </ul>
+        <p>Więcej informacji znajdziesz w <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Polityce prywatności Google</a>.</p>
+
+        <h2>Powiadomienia push</h2>
+        <p>Aby wysyłać powiadomienia o nowych terminach nawet wtedy, gdy aplikacja jest zamknięta, korzystamy z systemowego mechanizmu Apple Push Notification service (APNs). Token urządzenia używany do dostarczenia powiadomienia jest unikalny dla aplikacji i Twojego urządzenia oraz zarządzany przez Apple. Nie powiązujemy go z żadnymi danymi osobowymi.</p>
+
+        <h2>Informacje, których NIE zbieramy</h2>
+        <ul>
+            <li>Nie zbieramy ani nie przechowujemy Twojego hasła do info-car.pl na naszych serwerach</li>
+            <li>Nie zbieramy Twojego PESEL-u ani numeru PKK na naszych serwerach</li>
+            <li>Nie śledzimy Twojej dokładnej lokalizacji</li>
+            <li>Nie mamy dostępu do Twoich kontaktów, zdjęć, mikrofonu ani kamery</li>
+            <li>Nie sprzedajemy Twoich danych podmiotom trzecim</li>
+        </ul>
+
+        <h2>Usługi zewnętrzne</h2>
+        <table>
+            <tr>
+                <th>Usługa</th>
+                <th>Cel</th>
+                <th>Polityka prywatności</th>
+            </tr>
+            <tr>
+                <td>info-car.pl</td>
+                <td>Logowanie i pobieranie terminów egzaminów (oficjalne API)</td>
+                <td><a href="https://info-car.pl" target="_blank" rel="noopener">Link</a></td>
+            </tr>
+            <tr>
+                <td>Google AdMob</td>
+                <td>Wyświetlanie reklam</td>
+                <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+            </tr>
+            <tr>
+                <td>Apple Push Notification service</td>
+                <td>Dostarczanie powiadomień push</td>
+                <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td>
+            </tr>
+        </table>
+
+        <h2>Bezpieczeństwo danych</h2>
+        <p>Wszystkie dane wrażliwe (hasło, PESEL, numer PKK, token sesji) są przechowywane w iOS Keychain z atrybutem <code>WhenUnlockedThisDeviceOnly</code>. Oznacza to, że:</p>
+        <ul>
+            <li>Dane są szyfrowane i dostępne dopiero po odblokowaniu urządzenia (kodem, Touch ID lub Face ID)</li>
+            <li>Nie są synchronizowane przez iCloud Keychain</li>
+            <li>Nie są przenoszone przy odtworzeniu kopii zapasowej na inne urządzenie</li>
+        </ul>
+        <p>Komunikacja z info-car.pl odbywa się wyłącznie przez bezpieczne połączenie HTTPS.</p>
+
+        <h2>Przechowywanie danych</h2>
+        <p>Wszystkie lokalnie przechowywane dane można usunąć w dowolnej chwili przez:</p>
+        <ul>
+            <li>Wylogowanie się w aplikacji (czyści hasło i token sesji)</li>
+            <li>Wyczyszczenie danych kandydata w ustawieniach aplikacji</li>
+            <li>Odinstalowanie aplikacji (usuwa wszystkie dane bez wyjątku)</li>
+        </ul>
+        <p>Nie przechowujemy żadnych danych na zewnętrznych serwerach.</p>
+
+        <h2>Prywatność dzieci</h2>
+        <p>Aplikacja jest przeznaczona dla osób ubiegających się o prawo jazdy, czyli zgodnie z polskim prawem osób które ukończyły co najmniej 14 lat (kategoria AM). Nie zbieramy świadomie danych osobowych od dzieci poniżej 13. roku życia.</p>
+
+        <h2>Twoje prawa (RODO)</h2>
+        <p>Zgodnie z RODO masz prawo do:</p>
+        <ul>
+            <li>Wglądu w przetwarzane dane (wszystkie są dostępne w aplikacji w sekcji „Dane kandydata")</li>
+            <li>Sprostowania danych — w dowolnym momencie w ustawieniach aplikacji</li>
+            <li>Usunięcia wszystkich danych — przez wylogowanie i odinstalowanie aplikacji</li>
+            <li>Sprzeciwu wobec personalizowanych reklam — przez wyłączenie śledzenia w ustawieniach iOS</li>
+            <li>Złożenia skargi do Prezesa Urzędu Ochrony Danych Osobowych (UODO)</li>
+        </ul>
+        <p>Ponieważ nie zbieramy ani nie przetwarzamy żadnych Twoich danych poza Twoim urządzeniem, większość praw RODO realizujesz samodzielnie poprzez interfejs aplikacji.</p>
+
+        <h2>Zastrzeżenie</h2>
+        <p>EgzaminNaPrawko jest niezależną aplikacją. Nie jest powiązana, wspierana ani zatwierdzona przez info-car.pl, Polską Wytwórnię Papierów Wartościowych, Ministerstwo Infrastruktury ani żaden Wojewódzki Ośrodek Ruchu Drogowego (WORD). Wszelkie znaki towarowe należą do ich właścicieli.</p>
+
+        <h2>Zmiany w Polityce</h2>
+        <p>Możemy od czasu do czasu aktualizować niniejszą Politykę Prywatności. O wszelkich zmianach poinformujemy, aktualizując datę „Ostatnia aktualizacja". Dalsze korzystanie z aplikacji po zmianach oznacza ich akceptację.</p>
+
+        <h2>Kontakt</h2>
+        <p>Jeśli masz pytania dotyczące tej Polityki Prywatności lub przetwarzania danych, skontaktuj się z nami:</p>
+        <p><a href="mailto:bigkrzyh@gmail.com">bigkrzyh@gmail.com</a></p>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p class="copyright">© 2026 Krzysztof Kuźmicki. Wszelkie prawa zastrzeżone.</p>
+        </div>
+    </footer>
+</body>
+</html>

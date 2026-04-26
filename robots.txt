@@ -1,0 +1,8 @@
+# EgzaminNaPrawko Website Robots.txt
+# https://bigkrzyh.github.io/EgzaminNaPrawko/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://bigkrzyh.github.io/EgzaminNaPrawko/sitemap.xml
