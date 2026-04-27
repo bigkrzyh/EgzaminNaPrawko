@@ -134,9 +134,16 @@
                 <td>—</td>
                 <td>Nie</td>
             </tr>
+            <tr>
+                <td>Historia zakupów (Premium IAP)</td>
+                <td>Tak***</td>
+                <td>Funkcjonalność aplikacji</td>
+                <td>Tak (przez Apple ID)</td>
+            </tr>
         </table>
         <p>* Dane są przechowywane wyłącznie lokalnie na Twoim urządzeniu (iOS Keychain) i nie trafiają na nasze serwery — nie posiadamy własnych serwerów.</p>
         <p>** Zbierane przez Google AdMob w celach reklamowych.</p>
+        <p>*** Obsługiwane wyłącznie przez Apple za pośrednictwem StoreKit. Aplikacja otrzymuje jedynie informację, czy Premium jest aktywne — nie ma dostępu do danych płatniczych ani identyfikatora transakcji.</p>
 
         <h2>Informacje, które przetwarzamy</h2>
 
@@ -162,7 +169,30 @@
         <h3>4. Komunikacja z info-car.pl</h3>
         <p>Aplikacja w Twoim imieniu komunikuje się z oficjalnym API serwisu info-car.pl, aby pobierać listę wolnych terminów. Dane przesyłane są bezpośrednio z Twojego urządzenia do info-car.pl — nie pośredniczymy w tej komunikacji.</p>
 
+        <h2>Zakupy w aplikacji (Premium)</h2>
+        <p>Aplikacja oferuje jednorazowy, niekonsumpcyjny zakup wewnątrz aplikacji o nazwie <strong>Premium</strong> (cena 19,99 zł), który odblokowuje powiadomienia push, sprawdzanie w tle, Live Activity / Dynamic Island oraz wyłącza reklamy. Wersja darmowa pozwala przeglądać terminy ręcznie i korzystać z odświeżania na pierwszym planie.</p>
+
+        <h3>Co przetwarzamy</h3>
+        <ul>
+            <li><strong>Status uprawnienia (entitlement):</strong> aplikacja zapisuje lokalnie wartość logiczną (true/false) w UserDefaults pod kluczem <code>premium_unlocked</code>. Nie wysyłamy tej wartości na żaden serwer — służy ona wyłącznie do sterowania funkcjami premium na Twoim urządzeniu.</li>
+            <li><strong>Brak danych płatniczych:</strong> całość płatności obsługuje Apple za pośrednictwem StoreKit 2. Aplikacja <em>nie ma dostępu</em> do numeru karty, danych konta Apple ID, adresu rozliczeniowego ani imienia i nazwiska.</li>
+            <li><strong>Identyfikator transakcji Apple:</strong> weryfikujemy zakup poprzez StoreKit 2 (<code>Transaction.currentEntitlements</code>) tylko lokalnie na urządzeniu; nie przechowujemy ani nie przesyłamy identyfikatorów transakcji ani paragonów.</li>
+        </ul>
+
+        <h3>Udostępnianie w ramach Chmury Rodzinnej (Family Sharing)</h3>
+        <p>Zakup Premium jest udostępniany maksymalnie pięciu członkom rodziny w ramach standardowej usługi Apple Family Sharing. Reguły udostępniania określa Apple — aplikacja nie kontroluje tego procesu.</p>
+
+        <h3>Przywracanie zakupów</h3>
+        <p>Przycisk „Przywróć zakupy" w sekcji Premium uruchamia <code>AppStore.sync()</code> po stronie systemu iOS i odświeża stan uprawnienia z konta Apple ID. Nie wymaga to żadnych danych osobowych.</p>
+
+        <h3>Brak subskrypcji</h3>
+        <p>Premium jest jednorazowym zakupem. Nie ma automatycznego odnawiania, nie ma okresu próbnego, nie ma rozliczeń cyklicznych. W przypadku zwrotu lub cofnięcia uprawnień przez Apple aplikacja automatycznie wyłącza funkcje premium.</p>
+
+        <h3>Dostawca płatności</h3>
+        <p>Płatność obsługuje Apple Inc. zgodnie z polityką prywatności Apple Media Services: <a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">https://www.apple.com/legal/privacy/</a>.</p>
+
         <h2>Reklamy i Przejrzystość Śledzenia Aplikacji</h2>
+        <p><em>Reklamy są wyświetlane wyłącznie użytkownikom wersji darmowej. Po zakupie Premium banery reklamowe są ukrywane.</em></p>
         <p>Aplikacja wyświetla reklamy dostarczane przez Google AdMob.</p>
 
         <h3>Zgoda na śledzenie</h3>
@@ -219,6 +249,11 @@
             <tr>
                 <td>Apple Push Notification service</td>
                 <td>Dostarczanie powiadomień push</td>
+                <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td>
+            </tr>
+            <tr>
+                <td>Apple StoreKit / App Store</td>
+                <td>Obsługa jednorazowego zakupu Premium</td>
                 <td><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Link</a></td>
             </tr>
         </table>
